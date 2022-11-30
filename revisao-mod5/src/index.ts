@@ -1,4 +1,7 @@
-import  chalk  from "chalk";
+import { app } from './app'
+import createCharacter from './endpoints/createCharacter'
+import getAllCharacters from './endpoints/getAllCharacters'
 
-const message = chalk.red("Hello World!")
-console.log(message);
+app.get("/character", getAllCharacters)
+
+app.put("/character/new", createCharacter)
