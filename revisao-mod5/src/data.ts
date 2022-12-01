@@ -1,6 +1,6 @@
 import { character, GENDER, movie } from "./types"
 
-export const movies: movie[] = [
+export let movies: movie[] = [
     {
         id: 1,
         title: "Capitão América: O Primeiro Vingador",
@@ -118,7 +118,7 @@ export const movies: movie[] = [
     },
 ]
 
-export const characters: character[] = [{
+export let characters: character[] = [{
     id: 1,
     name: "Steve Rogers",
     gender: GENDER.MALE
