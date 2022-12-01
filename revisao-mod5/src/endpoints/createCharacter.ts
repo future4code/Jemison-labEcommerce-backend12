@@ -4,11 +4,11 @@ export default function (req: Request, res: Response): void {
 
     const { name, gender, description } = req.body
 
-    characters.push({
-        id: Date.now(),
-        name,
-        gender,
-        description
-    })
+    // characters.push({
+    //     id: Date.now(),
+    //     name,
+    //     gender,
+    //     description
+    // })
     res.status(201).end()
 }
