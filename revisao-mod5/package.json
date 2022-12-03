@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Revisão node.js",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "tsc && node ./build/index.js",
     "build": "tsc",
