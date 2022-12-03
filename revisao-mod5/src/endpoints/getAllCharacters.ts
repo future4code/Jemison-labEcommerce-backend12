@@ -13,7 +13,9 @@ export default async function getAllCharacters(req: Request, res: Response): Pro
         // página 1 -> offset 0 === 5 * 0
         // página 2 -> offset 5 === 5 * 1
         // página 3 -> offset 10 === 5 * 2
-
+ 
+        debugger
+        
         const offset = resultsPerPage * (Number(page) - 1)
 
         const characters: character[] = await connection("character")
@@ -22,6 +24,8 @@ export default async function getAllCharacters(req: Request, res: Response): Pro
             .offset(offset)
         res.send(characters)
     } catch (error) {
+        console.log(error);
+
         res.status(500).send("Unexpected server error")
     }
 }
