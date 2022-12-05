@@ -1,6 +1,6 @@
 # labEcommerce-backend
 
-## O link o deploy no render não funciona
+## Link do deploy no render
 
 <https://revisao-mod5-backend-6icu.onrender.com>
 
